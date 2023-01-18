@@ -10,8 +10,16 @@ namespace HealthSystemV2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Health System V2");
+            Console.WriteLine("Health System V2"); //player class only
             Console.WriteLine();
+            
+            //declaration
+            Player player = new Player();
+
+            player.ShowStats();
+            player.TakeDamage(10);
+            player.ShowStats();
+
 
             Console.WriteLine();
             Console.ReadKey(true);
